@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: platform-pro-v1-service
+spec:
+  selector:
+    app: platform-pro-v1
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
